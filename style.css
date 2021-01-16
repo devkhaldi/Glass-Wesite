@@ -115,7 +115,6 @@ main {
   display: flex;
   justify-content: space-between;
   border-radius: 1rem;
-  line-height: 1.7rem;
 }
 .content .card h4 {
   font-weight: 100;
@@ -127,4 +126,37 @@ main {
 .content .card .percentage {
   font-size: 1.2rem;
   color: #a8e3e1;
+}
+.content .card .card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.content .card .progress {
+  background: linear-gradient(to right top, #65dfc9, #4dd7ec);
+  display: block;
+  width: 100%;
+  height: 20%;
+  border-radius: 1rem;
+  position: relative;
+}
+.content .card .progress::after {
+  content: '';
+  position: absolute;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 0 1rem 1rem 0;
+  height: 100%;
+  display: block;
+}
+.content .card:nth-child(2) .progress::after {
+  left: 60%;
+  width: 40%;
+}
+.content .card:nth-child(3) .progress::after {
+  left: 20%;
+  width: 80%;
+}
+.content .card:nth-child(4) .progress::after {
+  left: 90%;
+  width: 10%;
 }
