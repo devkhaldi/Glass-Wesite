@@ -9,16 +9,18 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: 'Poppins';
 }
 .glass {
-  height: 80vh;
-  width: 60%;
+  min-height: 80vh;
+  width: 70%;
   background: white;
   background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
   border-radius: 1rem;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
   backdrop-filter: blur(2rem);
   z-index: 3;
+  display: flex;
 }
 .circle1,
 .circle2 {
@@ -36,4 +38,93 @@ main {
 .circle2 {
   top: 5%;
   right: 15%;
+}
+
+/* Sidebar */
+.sidebar {
+  flex: 1;
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-evenly;
+  padding: 1rem 0;
+}
+.links {
+  padding: 2rem 0;
+}
+.link {
+  display: flex;
+  margin: 1rem 0;
+  align-items: center;
+}
+.link h4 {
+  font-weight: 100;
+  margin-left: 1rem;
+}
+.pro {
+  background: linear-gradient(to right top, #65dfc9, #4dd7ec);
+  border-radius: 2em;
+  position: relative;
+  padding: 1rem;
+}
+.pro img {
+  position: absolute;
+  top: -0.6rem;
+  right: 1.5rem;
+  height: 90%;
+}
+.pro h4 {
+  font-weight: bold;
+  color: white;
+  width: 60%;
+}
+
+/* content */
+.content {
+  flex: 2;
+  padding: 2rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.content h1 {
+  font-size: 1.8rem;
+  color: #426696;
+}
+.content input {
+  background: rgba(255, 255, 255, 0.6);
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  border: none;
+  outline: none;
+  padding: 0.3rem 1rem;
+  border-radius: 1rem;
+  width: 60%;
+}
+.content .card:nth-child(2) {
+  margin-top: 1rem;
+}
+.content .card {
+  margin-top: 1rem;
+  padding: 0.8rem;
+  background: linear-gradient(to left top, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.5));
+  box-shadow: 3px 5px 10px rgba(122, 122, 122, 0.1);
+  display: flex;
+  justify-content: space-between;
+  border-radius: 1rem;
+  line-height: 1.7rem;
+}
+.content .card h4 {
+  font-weight: 100;
+  font-size: 1.1rem;
+}
+.content .card p {
+  font-size: 0.8rem;
+}
+.content .card .percentage {
+  font-size: 1.2rem;
+  color: #a8e3e1;
 }
